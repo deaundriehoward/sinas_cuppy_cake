@@ -3,14 +3,16 @@
     <head>
         <meta charset="UTF-8">
 	   <meta name="description" content="Sina's Cuppy Cake is locally owned bakery shop by Massina Williams. She makes all her baked goods with love and care. Each handcrafted from scratch.">
-	   <meta name="robots" content="nofollow">
-	   <meta http-equiv="pragma" content="no-cache">
+	    <meta name="robots" content="nofollow">
+	    <meta http-equiv="pragma" content="no-cache">
        <!-- CSS & Stylesheets -->
-       <link rel="stylesheet"  type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-       <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet"  type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
         <title> Sina's Cuppy Cake </title>
+        
     </head>
     <body>
+    <div id="header"></div>
         <!-- Jumbotron Sect. -->
         <div class="jumbotron container-fluid" style="text-align:center;">
             <h1> Cuppy <img src="assets/imgs/pink-cup.png" width="100" height="100" style="border-radius: 100%;">  Cakes </h1>
@@ -20,11 +22,11 @@
         <nav class="navbar navbar-default container-fluid navbar-fixed">
          <div class="container">
             <ol class="breadcrumb" style="text-align:center;">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li> <a href="#">Services</a></li>
-                <li><a href="#">About CC</a></li>
-                <li><a href="assets/contact/contact.php">Contact</a></li>
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="views/gallery.html">Gallery</a></li>
+                <li> <a href="#services">Services</a></li>
+                <li><a href="#about">About CC</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ol>
          </div>
         </nav><!-- End of Nav -->
@@ -43,19 +45,19 @@
                         <div class="item active">
                         <img id="carousel-pic" src="assets/imgs/purp.jpg" alt="..." >
                         <div class="carousel-caption">
-                            <button class="btn btn-default"> View Gallery</button>
+                            <button class="btn btn-default"><a href="views/gallery.html"> View Gallery</a></button>
                         </div>
                         </div>
                         <div class="item">
                         <img id="carousel-pic" src="assets/imgs/jess.jpg" alt="..." >
                         <div class="carousel-caption">
-                            <button class="btn btn-default"> View Gallery</button>
+                            <button class="btn btn-default"><a href="views/gallery.html"> View Gallery</a></button>
                         </div>
                         </div>
                         <div class="item">
                         <img id="carousel-pic" src="assets/imgs/bat.jpg" alt="...">
                         <div class="carousel-caption">
-                            <button class="btn btn-default"> View Gallery</button>
+                            <button class="btn btn-default"> <a href="views/gallery.html"> View Gallery</a></button>
                         </div>
                         </div>
                     </div>
@@ -73,7 +75,7 @@
                     </div><!-- End of Intro -->
 
         <!-- Services Sect. -->
-        <div class="container services">
+        <div class="container-fluid" id="services">
             <h1> Services </h1>
             <hr class="style-seven"/>
             <div class="row">
@@ -99,13 +101,14 @@
                         </div>
                 </div>
             </div>
-            <hr class="style-seven"/>
+            
         </div>
         <!-- End of Services -->     
 
 
         <!-- About -->
-        <div class="about container">
+        <hr class="style-seven"/>
+        <div class="about container" id="about">
             <div class="pic">
                 <img src="assets/imgs/cup-icon.jpg" alt="Cupcake Icon" height="100" width="100" style="border-radius: 100%;">
             </div>
@@ -119,7 +122,7 @@
         <!-- End of About -->    
 
         <!-- Contact Sect. -->
-        <div class="contact container">
+        <div class="container" id="contact">
             <h1> Contact </h1>
             <p> Here lies a contact form.... </p>
             <p> I am guessing it still hasn't loaded. Well, until it is fixed, please feel free to contact us at masina.williams@gmail.com were out CEO & Founder would love to hear from you. </p>
@@ -137,12 +140,13 @@
 
             <div class="center">
             </div>
-            
+
             <div class="right">
                 
             </div>
         </div>
         <!-- End of Footy -->
+
         <!-- Javascript & Whatnot -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
