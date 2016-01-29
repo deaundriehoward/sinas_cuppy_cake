@@ -16,17 +16,7 @@ html, body {
     margin: 0 auto;
     padding: 0 auto;
 }
-.intro {
-    background-image: url("../imgs/dub-choc-cupcake.jpeg");
-    background-position: cover;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    /*height: 20rem;*/
-    font-family: Ailerons;
-    margin: 0 auto;
-    border: 5px solid #f5f5f5;
-}  
+
 .bg h3 {
     color: whitesmoke;
 }
@@ -48,3 +38,71 @@ html, body {
     height: 15rem;
 }
 
+//* Glyph, by Harry Roberts */
+
+hr.style-eight {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+
+/* Inset, by Dan Eden */
+
+hr.style-six {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Flaired edges, by Tomas Theunissen */
+
+hr.style-seven {
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+/* ---------------- 
+    About Sect.
+   ---------------- */
+
+.about .pic {
+    text-align: center;
+}
+.about .text-sect {
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* ---------------- 
+    Contact Sect.
+   ---------------- */
+.contact {
+    text-align: center;
+    color: whitesmoke;
+}
